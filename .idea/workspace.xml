@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c4af06-d410-4fc1-af1e-874d7aa367be" name="Changes" comment="checkPage" />
+    <list default="true" id="73c4af06-d410-4fc1-af1e-874d7aa367be" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAuto.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702462350480</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1702462774570</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702462774570</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +115,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="checkPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkPage" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>
