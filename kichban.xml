@@ -4,7 +4,9 @@
         <classes>
             <class name="TestAuto">
                 <methods>
-                    <include name="checkPage"/>
+                    <include name="checkTitlePage"/>
+                    <include name="checkButtonDisplay"/>
+                    <include name="checkButtonSize"/>
                 </methods>
             </class>
         </classes>
