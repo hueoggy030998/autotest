@@ -20,4 +20,8 @@ public class TestAuto {
         driver.quit();
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }
