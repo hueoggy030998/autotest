@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73c4af06-d410-4fc1-af1e-874d7aa367be" name="Changes" comment="test 3">
+    <list default="true" id="73c4af06-d410-4fc1-af1e-874d7aa367be" name="Changes" comment="soft assert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kichban.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kichban.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAuto.java" afterDir="false" />
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702463056565</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="annotation">
+      <created>1702465418767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702465418767</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +140,8 @@
     <MESSAGE value="checkPage" />
     <MESSAGE value="test" />
     <MESSAGE value="test 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="test 3" />
+    <MESSAGE value="annotation" />
+    <MESSAGE value="soft assert" />
+    <option name="LAST_COMMIT_MESSAGE" value="soft assert" />
   </component>
 </project>

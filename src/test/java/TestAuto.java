@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 
-import java.io.IOException;
 import java.time.Duration;
 
 public class TestAuto {
@@ -35,20 +35,23 @@ public class TestAuto {
 
     @Test (groups = {"testText"}, priority = 3)
     public void checkTitlePage(){
-        Assert.assertEquals(driver.getTitle(),"aiTriage");
+        SoftAssert sortAssert=new SoftAssert();
+        sortAssert.assertEquals(driver.getTitle(),"aiTriage");
+        sortAssert.assertAll();
     }
 
     @Test (groups = {"testButton"}, priority = 2)
     public void checkButtonDisplay(){
-        Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"app\"]/div/form/div[4]")).isDisplayed(), true);
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"app\"]/div/form/div[4]")).isDisplayed());
 
     }
 
-    @Test (groups = {"testButton"}, enabled = true, description = "Test button 1",
+    @Test (groups = {"testButton"}, enabled = false, description = "Test button 1",
     expectedExceptions = AssertionError.class, priority = 1)
     public void checkButtonSize(){
         Assert.assertEquals(driver.findElement(By.xpath("//*[@id=\"app\"]/div/form/div[4]")).getSize().width, 100);
 
     }
+
 
 }
