@@ -4,7 +4,7 @@
         <classes>
             <class name="TestAuto">
                 <methods>
-                    <include name="checkTitlePage"/>
+                    <include name="checkClickAlert"/>
                 </methods>
             </class>
         </classes>

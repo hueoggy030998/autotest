@@ -1,6 +1,8 @@
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -16,12 +18,12 @@ public class TestAuto {
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
-        driver.get("https://test-aitriage-web.beedu.vn/login");
+        driver.get("https://demo.seleniumeasy.com/javascript-alert-box-demo.html");
     }
     @AfterClass
     public void closeChrome(){
-        driver.close();
-        driver.quit();
+//        driver.close();
+//        driver.quit();
     }
 
     @BeforeGroups (groups = {"testButton"})
@@ -53,5 +55,18 @@ public class TestAuto {
 
     }
 
+    @Test
+    public void checkClickAlert(){
+        WebElement btn=driver.findElement(By.cssSelector("#easycont > div > div.col-md-6.text-left > div:nth-child(4) > div.panel-body > button"));
+        btn.click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.switchTo().alert().accept();
+
+
+    }
 
 }

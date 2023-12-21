@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73c4af06-d410-4fc1-af1e-874d7aa367be" name="Changes" comment="soft assert">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seleniumeasy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/seleniumeasytests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/selenium/easy/pages/InputFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/selenium/easy/tests/InputFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/selenium/easy/utilities/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/selenium/easy/utilities/SetUpDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/InputForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumEasy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kichban.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kichban.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAuto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +57,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG./Users/huetransky/IdeaProjects/HueTest/kichban.xml">
+  <component name="RunManager">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="HueTest" />
@@ -66,8 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/huetransky/IdeaProjects/HueTest/kichban.xml" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="TestNG./Users/huetransky/IdeaProjects/HueTest/kichban.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702465418767</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="soft assert">
+      <created>1702526570409</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702526570409</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,5 +161,15 @@
     <MESSAGE value="annotation" />
     <MESSAGE value="soft assert" />
     <option name="LAST_COMMIT_MESSAGE" value="soft assert" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

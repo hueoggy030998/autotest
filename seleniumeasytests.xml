@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Selenium Easy">
+    <test name="Test Selenium Easy 1">
+        <classes>
+            <class  name="selenium.easy.tests.InputFormTest">
+            </class>
+        </classes>
+    </test>
+</suite>

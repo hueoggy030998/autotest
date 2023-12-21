@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Selenium Easy">
+    <test name="Test">
+        <parameter name="a" value="1"></parameter>
+        <parameter name="b" value="2"></parameter>
+        <parameter name="textMessage" value="Test"></parameter>
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="Test Checkbox"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+        <classes>
+            <class name="SeleniumEasy">
+
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
