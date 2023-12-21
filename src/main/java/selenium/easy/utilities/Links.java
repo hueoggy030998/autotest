@@ -1,4 +1,4 @@
-package selenium.easy.utilities;
+package main.java.selenium.easy.utilities;
 
 public class Links {
     public static final String DOMAIN="https://demo.seleniumeasy.com";

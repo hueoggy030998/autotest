@@ -1,10 +1,10 @@
-package selenium.easy.tests;
+package main.java.selenium.easy.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import selenium.easy.pages.InputFormPage;
-import selenium.easy.utilities.Links;
-import selenium.easy.utilities.SetUpDriver;
+import main.java.selenium.easy.pages.InputFormPage;
+import main.java.selenium.easy.utilities.Links;
+import main.java.selenium.easy.utilities.SetUpDriver;
 import org.testng.annotations.*;
 
 import java.time.Duration;

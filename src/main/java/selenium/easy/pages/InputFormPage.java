@@ -1,6 +1,5 @@
-package selenium.easy.pages;
+package main.java.selenium.easy.pages;
 
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -2,8 +2,7 @@
 <suite name="Test Selenium Easy">
     <test name="Test Selenium Easy 1">
         <classes>
-            <class  name="selenium.easy.tests.InputFormTest">
-            </class>
+            <class name="main.java.selenium.easy.tests.InputFormTest"/>
         </classes>
     </test>
 </suite>

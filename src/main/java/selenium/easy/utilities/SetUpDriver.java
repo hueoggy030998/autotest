@@ -1,4 +1,4 @@
-package selenium.easy.utilities;
+package main.java.selenium.easy.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SetUpDriver {
     public WebDriver getDriver(){
         WebDriver driver;
+        System.setProperty("webdriver.chrome.whitelistedIps", "");
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         return driver;
