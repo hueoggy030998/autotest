@@ -1,5 +1,6 @@
 package main.java.selenium.easy.tests;
 
+// import net.datafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import main.java.selenium.easy.pages.InputFormPage;
@@ -8,6 +9,7 @@ import main.java.selenium.easy.utilities.SetUpDriver;
 import org.testng.annotations.*;
 
 import java.time.Duration;
+import java.util.Locale;
 
 public class InputFormTest {
     WebDriver driver;
@@ -15,7 +17,8 @@ public class InputFormTest {
 
     @BeforeClass
     public void beforeClassTest(){
-        driver = new SetUpDriver().getDriver();
+        driver = new SetUpDriver().getDriver("chrome");
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
         driver.get(Links.URL_INPUT_FORM);
 
@@ -23,7 +26,7 @@ public class InputFormTest {
 
     @AfterClass
     public void afterClassTest(){
-        driver.close();
+//        driver.close();
         driver.quit();
     }
 
@@ -53,6 +56,7 @@ public class InputFormTest {
 
     @DataProvider (name="data-input-form")
     public Object[][] dt(){
+        // Faker faker=new Faker(new Locale("vi"));
         return new Object[][]{{"Tran", "Hue", "huetransky@gmail.com", "0325811117", "Thuy Hung",
                 "Thai Thuy", 3, "10000", "google.com", 1, "test comment"}};
     }
