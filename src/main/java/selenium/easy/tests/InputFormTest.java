@@ -1,13 +1,17 @@
 package main.java.selenium.easy.tests;
 
-// import net.datafaker.Faker;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
 import main.java.selenium.easy.pages.InputFormPage;
 import main.java.selenium.easy.utilities.Links;
 import main.java.selenium.easy.utilities.SetUpDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.Locale;
 
@@ -28,6 +32,26 @@ public class InputFormTest {
     public void afterClassTest(){
 //        driver.close();
         driver.quit();
+    }
+
+    @AfterMethod
+    public void afterMethodTest(ITestResult result){
+        if(result.getStatus()==ITestResult.FAILURE){
+            try {
+                TakesScreenshot ts= (TakesScreenshot) driver;
+                File source=ts.getScreenshotAs(OutputType.FILE);
+                File folder=new File("./src/main/resources/Screenshots/");
+                if(!folder.exists()){
+                    folder.mkdirs();
+                }
+                FileHandler.copy(source, new File("./src/main/resources/Screenshots/" +result.getName() + ".png"));
+
+            }catch (Exception e){
+                e.printStackTrace();
+                System.out.println("Capture failed");
+
+            }
+        }
     }
 
     @Test (dataProvider = "data-input-form")
